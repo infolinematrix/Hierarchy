@@ -1,0 +1,61 @@
+{
+    "name": "reactor/hierarchy",
+    "description": "Polymorphic content management with node structure.",
+    "license": "MIT",
+    "keywords": [
+        "kenarkose",
+        "reactor",
+        "reactorcms",
+        "hierarchy",
+        "node",
+        "polymorphic",
+        "management",
+        "laravel",
+        "laravel5"
+    ],
+    "version": "3.0.0",
+    "authors": [
+        {
+            "name": "Matrix Infoline",
+            "email": "infolinematrix@gmail.com.com",
+            "homepage": "http://scriptbazar.com",
+            "role": "Developer / Designer"
+        }
+    ],
+    "require": {
+        "php": "^7.1.3",
+        "laravel/framework": "5.6.*",
+        "kenarkose/chronicle": "*",
+        "kenarkose/ownable": "*",
+        "kenarkose/sortable": "*",
+        "kenarkose/tracker": "*",
+        "nicolaslopezj/searchable": "*",
+        "kalnoy/nestedset": "*",
+        "doctrine/dbal": "*",
+        "dimsav/laravel-translatable": "*",
+        "kris/laravel-form-builder": "*",
+        "doctrine/annotations": "*"
+    },
+    "require-dev": {
+        "orchestra/testbench": "*",
+        "phpunit/phpunit": "*",
+        "mikey179/vfsStream": "*",
+        "mockery/mockery": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Reactor\\Hierarchy\\": "src/"
+        },
+        "files": [
+            "src/Support/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "classmap": [
+            "tests"
+        ]
+    },
+    "suggest": {
+        "laravel/framework": "This package requires Laravel 5.5"
+    }
+}
