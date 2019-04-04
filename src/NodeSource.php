@@ -87,18 +87,12 @@ class NodeSource extends Eloquent implements NodeSourceContract {
     public function getSourceModelName($type = null)
     {
 
-        /*
         $bag = hierarchy_bag('nodetype');
-
 
         if (!$this->source_type && $bag)
         {
             $this->source_type = $bag->first()->name;
         }
-
-        if($bag->first()->name != 'categories'){
-            dd($bag->first()->name);
-        }*/
 
         $type = $type ?: $this->source_type;
 
